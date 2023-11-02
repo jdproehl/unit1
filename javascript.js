@@ -1,3 +1,3 @@
 function myFunction() {
-    alert("This is the Home Page");
+    alert("I enjoy hiking with my Australian Shepherd, Oakley!");
   }
