@@ -64,7 +64,8 @@ body {
     color: white;
   }
   img {
+    max-width: 768px;
+    max-height: 1024px;
+    margin: auto;
     display: block;
-    margin-left: 300px;
-    margin-right: 20px;
   }
