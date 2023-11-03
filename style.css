@@ -6,16 +6,30 @@ header {
     margin-bottom: 25px;
     margin-left: 350px;
     margin-right: 350px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     text-align: center;
     font-size: xx-large;
 }
-body {
-    background-image: url('green.jpeg');
-}
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url(https://images.pexels.com/photos/355747/pexels-photo-355747.jpeg?cs=srgb&dl=pexels-pixabay-355747.jpg&fm=jpg);
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 .button {
     border-color: white;
     color: white;
@@ -24,7 +38,7 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    background-color: rgb(28, 61, 28);
+    background-color: rgb(69, 70, 75);
     display: center;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -46,26 +60,77 @@ body {
   }
   h1 {
     text-align: center;
-    color: white;
+    color: rgb(28, 61, 28);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
   }
   h2 {
     color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-left: 40%;
+    margin-right: 40%;
   }
   h3 {
-    color: white;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
   }
   h4 {
-    color: white;
+    color: black;
   }
   p {
-    color: white;
+    color: black
   }
   li {
-    color: white;
+    color: black;
   }
   img {
-    max-width: 768px;
-    max-height: 1024px;
+    max-width: 968px;
+    max-height: 1224px;
     margin: auto;
     display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    filter: drop-shadow(20px 20px 10px rgb(52, 59, 52));
   }
+  @media screen and (max-width:1200px) {
+    body {
+        background-color: aqua;
+    }
+}
+section {
+    border-radius: 20px;
+    border-style: groove;
+    display: flex;
+    opacity: .9;
+    color: white;
+    margin-left: 40%;
+    margin-right: 40%;
+    justify-content: center;
+    background-color: gray;
+}
+label:nth-child(odd) {
+    color: rgb(25, 24, 24);
+}
+label:nth-child(even) {
+    color: rgb(46, 3, 3);
+}
+label {
+    font-size: x-large;
+    color:black;
+}
+article {
+    border-radius: 20px;
+    border-style: groove;
+    display:flexbox;
+    opacity: .9;
+    color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-content: center;
+    background-color: gray;
+}
